@@ -9,8 +9,6 @@
  如果你好的意见或者无法访问时请联系作者
  ```
  
- 张探长 maskupp@outlook.com
-
-
-
+ 张探长 
+ maskupp@outlook.com
 [FIND ME](https://github.com/whoma/GPA-FOR-TCU/blob/master/find%20me.jpg)
