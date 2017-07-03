@@ -15,4 +15,4 @@
  maskupp@outlook.com
  
  
-[我需要你的力量，我们一起做最好的软件！！！](https://github.com/whoma/GPA-FOR-TCU/blob/master/find%20me.jpg)
+[我需要你的力量，我们一起做最好玩的东西！！！(备注GPA)](https://github.com/whoma/GPA-FOR-TCU/blob/master/find%20me.jpg)
