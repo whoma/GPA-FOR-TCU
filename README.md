@@ -8,11 +8,13 @@
  增加 $假如我考这么高$ 功能(点击成绩，进行模拟修改，得到模拟修改成绩后的GPA)
  如果你好的意见或者无法访问时请联系作者
  ```
- 
+[我需要你的力量，我们一起做最酷的东西！！！(备注GPA)](https://github.com/whoma/GPA-FOR-TCU/blob/master/find%20me.jpg) 
+
+
  张探长 
- 
+
  
  maskupp@outlook.com
  
  
-[我需要你的力量，我们一起做最酷的东西！！！(备注GPA)](https://github.com/whoma/GPA-FOR-TCU/blob/master/find%20me.jpg)
+
