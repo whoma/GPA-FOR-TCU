@@ -3,7 +3,8 @@
 ## 因发现学校给的小于我的，为了提供更好的服务，我接下来将进行维护，并暂时停止服务
 
 
-~~[点击进行访问 快速查询GPA](http://gpa.ngrok.club:8080/getGPA/gpa/login)
+~~[点击进行访问 快速查询GPA]~~
+<!--(http://gpa.ngrok.club:8080/getGPA/gpa/login)-->
 
 
 >  计算出的GPA，可能会和学校的有出入。我这个只是用成绩计算GPA，学校有可能会有其它的加分项。
