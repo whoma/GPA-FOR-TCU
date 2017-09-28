@@ -3,7 +3,7 @@
 
 
 ##  更新：2017-9-28
-[点击访问](http://www.baidu.com)
+[点击访问](http://tcuok.tunnel.echomod.cn/getGPA/gpa/login)
 ##  该系统统计的绩点，除去了加分项。如要查询加分项后的绩点，请去各院学办！
 
 
