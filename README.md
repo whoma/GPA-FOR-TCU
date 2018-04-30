@@ -2,8 +2,13 @@
 
 
 ##  更新：2018-4-30
-以前用 Java 写的查绩点没有问题，但需要本地一直挂着服务，并且开启 ngrok 外网即可访问，但今年就要毕业了，想着没有人挂着网址了，刚好又打算以后工作不做 Java 做前端了，于是抽了点时间写了个 JS 版本，可支持登录教务系统成功后，将该代码复制到审核元素中即可查询到绩点，具体使用[点击](/byJS/README.md)
+大家觉得好用，给颗星星吧！
 
+### byJS
+以前用 Java 写的查绩点没有问题，但需要本地一直挂着服务，并且开启 ngrok 外网即可访问，但今年就要毕业了，想着没有人挂着网址了，刚好又打算以后工作不做 Java 做前端了，于是抽了点时间写了个 JS 版本，可支持登录教务系统成功后，将该代码复制到审核元素中即可查询到绩点，具体使用[请点击](/byJS/README.md)
+
+### byJava
+后台是用 Java 写的，在这里暂时不开源。
 ##  更新：2017-9-28
 [点击访问](http://tcuok.tunnel.echomod.cn/getGPA/gpa/login)
 ##  该系统统计的绩点，除去了加分项。如要查询加分项后的绩点，请去各院学办！
@@ -43,3 +48,26 @@
  
 
 <h5 align="right">stay hungry stay foolish!</h5>
+
+MIT License
+
+Copyright (c) 2018 zhangwenjun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
