@@ -187,7 +187,7 @@ function GetTableData(node) {
 
     let o = {
         GPA: totalWeightMultiCredit / TotalCredit,
-        NPGPA: totalWeightMultiCredit / npTotalCredit,
+        OPGPA: totalWeightMultiCredit / npTotalCredit,
     }
 
     return o;
