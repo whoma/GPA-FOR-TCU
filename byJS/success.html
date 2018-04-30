@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset='utf-8'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA查询结果</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h2>
+            包含不及格成绩的GPA:&nbsp;&nbsp;
+            <span id="GPAAll">{{GPA}}</span>
+            <br> 除去不及格成绩的GPA:&nbsp;&nbsp;
+            <span id="OPGPAAll">{{OPGPA}}</span>
+        </h2>
+
+        <div align="right">
+            <input type="button" value="重置" onclick="window.location.reload()" /> &nbsp;&nbsp;
+        </div>
+        <table id="tabProduct" class="bordered">
+            <tr>
+                <th>课程号</th>
+                <th>课序号</th>
+                <th>课程名</th>
+                <th>英文课程名</th>
+                <th Name="credit">学分</th>
+                <th>课程属性</th>
+                <th EditType="TextBox" Name="score">成绩</th>
+                <th>未通过原因</th>
+                <th Expression="score" Name="weight">绩点</th>
+            </tr>
+
+            <tr v-for="n in node">
+                <td>{{n.numberShort}}</td>
+                <td>{{n.numberLong}}</td>
+                <td>{{n.chName}}</td>
+                <td>{{n.enName}}</td>
+                <td>{{n.credit}}</td>
+                <td>{{n.property}}</td>
+                <td>
+                    <input type="text" v-model="n.score">
+                </td>
+                <td>{{n.npReason}}</td>
+                <td>{{n.weight}}</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <br>
+    <br>
+
+    <h5 align="right">stay hungry stay foolish!</h5>
+
+    <br>
+    <script>
+        //提取表格的值,JSON格式
+        function GetTableData(node) {
+            /* 
+              学分 * 绩点 是一样的
+              唯一不一样的地方就是 学分 相加的
+              只算及格的话就是 只要 及格的
+               */
+            var TotalCredit = 0;
+            var npTotalCredit = 0;
+            var totalWeightMultiCredit = 0;
+            for (let course of node) {
+                course.weight = getWeight(course.score)
+                let c = Number(course.credit);
+                totalWeightMultiCredit += course.weight * c;
+                TotalCredit += c;
+                if (course.weight != 0) {
+                    npTotalCredit += c;
+                }
+            }
+
+            let o = {
+                GPA: totalWeightMultiCredit / TotalCredit,
+                OPGPA: totalWeightMultiCredit / npTotalCredit,
+            }
+
+            return o;
+        }
+        function getWeight(score) {
+            var weight = "";
+            var reg = new RegExp("^[0-9.]*$");
+            if (reg.test(score)) {
+                score = Number(score);
+                if (score >= 95) {
+                    weight = 4.5;
+                } else if (score >= 90 && score <= 94) {
+                    weight = 4.0;
+                } else if (score >= 85 && score <= 89) {
+                    weight = 3.5;
+                } else if (score >= 80 && score <= 84) {
+                    weight = 3.0;
+                } else if (score >= 75 && score <= 79) {
+                    weight = 2.5;
+                } else if (score >= 70 && score <= 74) {
+                    weight = 2.0;
+                } else if (score >= 65 && score <= 69) {
+                    weight = 1.5;
+                } else if (score >= 60 && score <= 64) {
+                    weight = 1.0;
+                } else {
+                    weight = 0.0;
+                }
+            } else if ("优良中合格及格".indexOf(score) != -1) {
+                if (score.indexOf("优") != -1) {
+                    weight = 4.0;
+                }
+                if (score.indexOf("良") != -1) {
+                    weight = 3.0;
+                }
+                if (score.indexOf("中") != -1) {
+                    weight = 2.0;
+                }
+                if ((score.indexOf("合格") != -1) || (score.indexOf("及格") != -1)) {
+                    weight = 1.0;
+                }
+            }
+            return weight;
+        }
+        new Vue({
+            el: '#app',
+            data: {
+                node: node,
+            },
+            computed: {
+                GPA: function () {
+                    let o = GetTableData(this.node);
+                    return o.GPA;
+                },
+                OPGPA: function () {
+                    let o = GetTableData(this.node);
+                    return o.OPGPA;
+                },
+            },
+        })
+
+    </script>
+
+</body>
+
+</html>
