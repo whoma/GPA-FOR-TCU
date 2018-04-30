@@ -26,9 +26,8 @@
 <img src="./img/step1.jpg" width=80% >
 <img src="./img/step2.jpg" width=80% >
 - 关闭审核元素(有一个小叉叉，别关错了)，即可看到绩点结果，修改分数可模拟改后的绩点结果。
-<img src="./img/step3.jpg" width=80% >
 
-- 结果
+<img src="./img/step3.jpg" width=80% >
 
 注: 分数为 0 ~ 100 或 优良中合格及格。
 
@@ -50,7 +49,7 @@ success.html 为生成的新页面
 ```
 用 Ajax 获取到成绩，再解析后生成数组对象，然后用 Vue 生成视图(view)，Vue 绑定成绩(data)，即可实时修改成绩，计算绩点。
 
-注：以前的 Java 版本并没有用 Vue，而是用的原生 JS。
+注：以前的 Java 版本并没有用 Vue，而是用的原生 JS。
 ```
 ### 支持的游览器
 ```
