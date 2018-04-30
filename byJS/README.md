@@ -25,6 +25,7 @@
 - 登录教务系统成功后，右键鼠标，点击审核元素(Inspect Element)，再点击控制台(console)，将刚才复制代码粘贴到 console 输入框中(有一栏可以输入)，回车即可。
 <img src="./img/step1.jpg" width=80% >
 <img src="./img/step2.jpg" width=80% >
+
 - 关闭审核元素(有一个小叉叉，别关错了)，即可看到绩点结果，修改分数可模拟改后的绩点结果。
 
 <img src="./img/step3.jpg" width=80% >
