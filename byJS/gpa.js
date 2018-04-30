@@ -1,3 +1,7 @@
+/**
+ *  author: 张探长
+ *  time: 2018-4-10
+ */
 const ajax = request => {
     let r = new XMLHttpRequest();
     r.open(request.method, request.url, true);
