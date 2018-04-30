@@ -248,7 +248,7 @@ const request = {
         let nodeTr = el.querySelector('.titleTop2').querySelectorAll('tr');
         // 课程号 课序号 课程名 英文课程名 学分 课程属性 成绩 未通过原因
         let type = ['numberShort', 'numberLong', 'chName', 'enName', 'credit', 'property', 'score', 'npReason',];
-        for (let i = 2; i < 59; i++) {
+        for (let i = 2; i < nodeTr.length - 2; i++) {
             let nodeTd = nodeTr[i].querySelectorAll('td')
             let o = {};
             for (let j = 0; j < 8; j++) {
