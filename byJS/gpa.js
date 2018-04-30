@@ -119,7 +119,7 @@ table {
             包含不及格成绩的GPA:&nbsp;&nbsp;
             <span id="GPAAll">{{GPA}}</span>
             <br> 除去不及格成绩的GPA:&nbsp;&nbsp;
-            <span id="OPGPAAll">{{OPGPA}}</span>
+            <span id="NPGPAAll">{{NPGPA}}</span>
         </h2>
 
         <div align="right">
@@ -187,7 +187,7 @@ function GetTableData(node) {
 
     let o = {
         GPA: totalWeightMultiCredit / TotalCredit,
-        OPGPA: totalWeightMultiCredit / npTotalCredit,
+        NPGPA: totalWeightMultiCredit / npTotalCredit,
     }
 
     return o;
@@ -274,7 +274,7 @@ const request = {
                     },
                     NPGPA: function () {
                         let o = GetTableData(this.node);
-                        return o.OPGPA;
+                        return o.NPGPA;
                     },
                 },
             })
