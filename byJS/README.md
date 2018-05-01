@@ -19,7 +19,7 @@
 
 ### 使用
 
-<a href="https://www.bilibili.com/video/av22820823/">视频快速上手</a>
+<a href="https://www.bilibili.com/video/av22820823/" target="_blank">视频快速上手</a>
 
 - 打开本目录下的 gpa.js 或[点击](/byJS/gpa.js)
 
