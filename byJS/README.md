@@ -11,9 +11,9 @@
 [支持的游览器](#支持的游览器)
 
 [常见问题](#常见问题)
-
+<div style="display:none">
 [请我喝康师傅？(我就是试试，看下有没有好心人)](#请我喝康师傅)
-
+</div>
 [TODO](#该添加的)
 
 
@@ -79,11 +79,11 @@ q: 那怎么找你？
 
 a: 这，你看根目录的文件夹中有一个 find me.jpg
 
-
+<div style="display:none">
 ### 请我喝康师傅
 
 <img src="./img/milk.jpeg" width=50% >
-
+</div>
 
 ### 该添加的
 ```
